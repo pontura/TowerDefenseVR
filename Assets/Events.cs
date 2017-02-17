@@ -21,5 +21,8 @@ public static class Events
 	public static System.Action<int> OnMoneyUpdate = delegate { };
 	public static System.Action<Vector3, int> OnEnemyHurt = delegate { };
 	public static System.Action<int> OnMoneyUpdated = delegate { };
+
+	public static System.Action<Vector3> OnTeleportAvailable = delegate { };
+	public static System.Action OnTeleportDisable = delegate { };
 }
    

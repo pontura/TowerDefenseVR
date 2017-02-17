@@ -2,11 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UiTowerButton : MonoBehaviour {
-
-	public Material mat_normal;
-	public Material mat_over;
-	public MeshRenderer meshRenderer;
+public class UiTowerButton : UiButton {
 
 	public Tower.types type;
 	public TextMesh field;
@@ -28,22 +24,9 @@ public class UiTowerButton : MonoBehaviour {
 		}
 		field.text = "$" + price;
 	}
-	public void Clicked()
+	public override void OnClicked()
 	{
 		uiTowerPanel.Selected (type);
-	}
-	void OnTriggerEnter(Collider col)
-	{
-		if (col.gameObject.tag == "InteractiveHand") {
-			Clicked ();
-			meshRenderer.material = mat_over;
-		}
-	}
-	void OnTriggerExit(Collider col)
-	{
-		if (col.gameObject.tag == "InteractiveHand") {
-			meshRenderer.material = mat_normal;
-		}
 	}
 
 }

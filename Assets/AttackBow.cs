@@ -31,7 +31,7 @@ public class AttackBow : Attack {
 
 		Vector3 targetPos = target.transform.position;
 		//altura del enemy:
-		targetPos.y += 1.5f;
+		targetPos.y += 3f;
 		targetPos.x += Random.Range (0, malaPunteria)-(malaPunteria/2);
 		targetPos.z += Random.Range (0, malaPunteria)-(malaPunteria/2);
 

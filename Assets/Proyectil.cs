@@ -31,6 +31,7 @@ public class Proyectil : MonoBehaviour {
 				Reset ();
 				return;
 			}
+			CancelInvoke ();
 			int bow_damage = World.Instance.settings.defenders.bow_damage;
 			int hurtEnemy = World.Instance.settings.prices.hurtEnemy;
 
@@ -42,9 +43,8 @@ public class Proyectil : MonoBehaviour {
 			GetComponent<Rigidbody> ().isKinematic = true;
 			GetComponent<Collider> ().enabled = false;
 			transform.SetParent (col.transform);
-		} else {
-			GetComponent<Rigidbody>().velocity = Vector3.zero;
-		}
+		} 
+		GetComponent<Rigidbody>().velocity = Vector3.zero;
     }
     void Reset()
     {

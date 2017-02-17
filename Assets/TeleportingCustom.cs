@@ -44,8 +44,8 @@ public class TeleportingCustom : MonoBehaviour {
 
 	void DoTeleport (object sender, DestinationMarkerEventArgs e) {
 		
-		if (ValidLocation (e.target, e.destinationPosition) && e.enableTeleport)
-			return;
+		//if (ValidLocation (e.target, e.destinationPosition) && e.enableTeleport)
+			//return;
 		
 		Tower tower = e.target.gameObject.GetComponent<Tower> ();
 		if (tower != null) {
@@ -53,12 +53,14 @@ public class TeleportingCustom : MonoBehaviour {
 			newPos.y = tower._height;
 			transform.localPosition = newPos;
 			Events.OnTeleport (tower);
+			return;
 		}
-		//UiTowerButton button =  e.target.gameObject.GetComponent<UiTowerButton> ();
-	//	if (button != null) {
-		///	button.Clicked ();
-		//}
 
+		UiButton uiButton = e.target.gameObject.GetComponent<UiButton> ();
+		if (uiButton != null) {
+			uiButton.Clicked ();
+			return;
+		}
 
 	}
 	protected virtual bool ValidLocation(Transform target, Vector3 destinationPosition)

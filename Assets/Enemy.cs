@@ -6,7 +6,7 @@ public class Enemy : Character
     private PathfinderNodesManager pathNodes;
     public GameObject asset;
 	public float speed;
-	public Animator anim;
+	//public Animator anim;
 
     public override void OnStart()
     {
@@ -18,7 +18,7 @@ public class Enemy : Character
 
         pathNodes = GetComponent<PathfinderNodesManager>();
 		speed = World.Instance.settings.enemies.speed_to_run;
-		anim.Play ("walk");
+	//	anim.Play ("walk");
     }
     public void SetMoveToTarget(Transform target)
     {
@@ -56,11 +56,11 @@ public class Enemy : Character
         if (action == actions.ATTACKING) return;
         attack.Init(character);
         action = actions.ATTACKING;
-		anim.Play ("idle");
+		//anim.Play ("idle");
     }
     public override void OnEnemyKilled()
     {
         action = actions.MOVEING_TO_TARGET;
-		anim.Play ("walk");
+		//anim.Play ("walk");
     }
 }

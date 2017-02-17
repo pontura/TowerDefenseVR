@@ -20,19 +20,26 @@ public class Tower : MonoBehaviour {
 		SOLDIERS
 	}
 	public float _height;
+	private Collider collider;
 
-	void OnEnable()
+	void Start()
 	{
-		//if(container1 != null)
-		//Invoke ("Delayed", 1);
+		collider = GetComponent<Collider> ();
+		Events.OnTeleport += OnTeleport;
+	}
+	void OnTeleport(Tower tower)
+	{
+		if (tower == this)
+			OnActive (true);
+		else
+			OnActive (false);
 	}
 	void Delayed()
 	{
 		//ChangeType (types.BOW_ATTACK, 1);
 	}
 	public void ChangeType(types newType, int id)
-	{
-		
+	{		
 		Transform container = GetContainer (id);
 		Utils.RemoveAllChildsIn (container);
 
@@ -51,9 +58,12 @@ public class Tower : MonoBehaviour {
 		newDefender.transform.localEulerAngles = Vector3.zero;
 		newDefender.transform.localPosition = Vector3.zero;
 	}
-	public void AddUI()
+	void OnActive(bool setActive)
 	{
-
+		if (setActive)
+			collider.enabled = false;
+		else
+			collider.enabled = true;
 	}
 	Transform GetContainer(int id)
 	{

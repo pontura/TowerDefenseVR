@@ -31,6 +31,7 @@ public class EnemiesSpawner : MonoBehaviour {
     }
 	void Respawn()
 	{
+		total++;
 		Invoke("LoopSpawn", wait_to_respawn);
 		id = 0;
 	}

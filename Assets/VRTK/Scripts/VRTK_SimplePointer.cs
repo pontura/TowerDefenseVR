@@ -27,6 +27,9 @@ namespace VRTK
         [Tooltip("The layers to ignore when raycasting.")]
         public LayerMask layersToIgnore = Physics.IgnoreRaycastLayer;
 
+
+		public Color pointerUIButtonColor = new Color(0.5f, 0.5f, 0f, 1f);
+
         private GameObject pointerHolder;
         private GameObject pointer;
         private GameObject pointerTip;
@@ -152,6 +155,7 @@ namespace VRTK
             base.SetPlayAreaCursorTransform(pointerTip.transform.position);
         }
 
+		GameObject lastCollisionWith = null;
         private float GetPointerBeamLength(bool hasRayHit, RaycastHit collidedWith)
         {
             var actualLength = pointerLength;
@@ -162,6 +166,7 @@ namespace VRTK
                 if (pointerContactTarget != null)
                 {
                     base.PointerOut();
+					Events.OnTeleportDisable();
                 }
 
                 pointerContactDistance = 0f;
@@ -169,18 +174,34 @@ namespace VRTK
                 destinationPosition = Vector3.zero;
 
                 UpdatePointerMaterial(pointerMissColor);
+
             }
 
             //check if beam has hit a new target
             if (hasRayHit)
             {
+				if (lastCollisionWith != collidedWith.transform.gameObject) {
+					Tower tower = collidedWith.transform.gameObject.GetComponent<Tower> ();
+					if(tower)
+						Events.OnTeleportAvailable (tower.transform.position);
+					lastCollisionWith = collidedWith.transform.gameObject;
+				}
+
                 pointerContactDistance = collidedWith.distance;
                 pointerContactTarget = collidedWith.transform;
                 destinationPosition = pointerTip.transform.position;
 
-                UpdatePointerMaterial(pointerHitColor);
+				if (lastCollisionWith.tag == "UIButton") {
+					UpdatePointerMaterial (pointerUIButtonColor);
+					base.PointerIn();
+				} else
+				if (lastCollisionWith.tag == "Tower") {
+					UpdatePointerMaterial (pointerHitColor);
+					base.PointerIn();
+				}
+				else
+					UpdatePointerMaterial(pointerMissColor);
 
-                base.PointerIn();
             }
 
             //adjust beam length if something is blocking it
