@@ -14,10 +14,13 @@ public class Enemy : Character
         settings.force = World.Instance.settings.enemies.force;
         settings.frequency_to_attack = World.Instance.settings.enemies.frequency_to_attack;
         settings.speed_to_run = World.Instance.settings.enemies.speed_to_run;
+
         settings.speed_to_target = World.Instance.settings.enemies.speed_to_target;
 
         pathNodes = GetComponent<PathfinderNodesManager>();
 		speed = World.Instance.settings.enemies.speed_to_run;
+		//if (Random.Range (0, 100) < 40)
+		//	speed *= 2;
 	//	anim.Play ("walk");
     }
     public void SetMoveToTarget(Transform target)

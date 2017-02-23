@@ -31,7 +31,7 @@ namespace VRTK
 		public Color pointerUIButtonColor = new Color(0.5f, 0.5f, 0f, 1f);
 
         private GameObject pointerHolder;
-        private GameObject pointer;
+        public GameObject pointer;
         private GameObject pointerTip;
         private Vector3 pointerTipScale = new Vector3(0.05f, 0.05f, 0.05f);
         // material of customPointerCursor (if defined)
