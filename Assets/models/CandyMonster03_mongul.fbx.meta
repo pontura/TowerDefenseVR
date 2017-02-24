@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: 3ca4daa286405124782d330f943b3e73
+timeCreated: 1487943216
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bone__eye_LEFt
+    100002: Bone__eye_RIGHT
+    100004: //RootNode
+    100006: CATRigHub0001
+    100008: CATRigHub0001Gizmo
+    100010: CATRigHub006
+    100012: CATRigHub006Gizmo
+    100014: CATRigLLeg1
+    100016: CATRigLLeg2
+    100018: CATRigLLegAnkle
+    100020: CATRigLLegDigit11
+    100022: CATRigLLegDigit12
+    100024: CATRigLLegPlatform
+    100026: CATRigRLeg1
+    100028: CATRigRLeg2
+    100030: CATRigRLegAnkle
+    100032: CATRigRLegDigit11
+    100034: CATRigRLegDigit12
+    100036: CATRigRLegPlatform
+    100038: CATRigSpine1
+    100040: CATRigSpine2
+    100042: Character003
+    100044: Choc_eye-B_L
+    100046: Choc_ojo-Choc_eye-B_R
+    100048: Choc_ojo-Choc_eye-W_L
+    100050: Choc_ojo-Choc_eye-W_R
+    100052: Ctrl_eyes
+    100054: Ctrl_lid_Lo_L
+    100056: Ctrl_lid_lo_R
+    100058: Ctrl_lid_up_L
+    100060: Ctrl_lid_up_R
+    100062: Ctrl_pu_L
+    100064: Ctrl_pu_R
+    100066: Jeerry Bean L-leg001
+    100068: Jeerry Bean L-leg002
+    100070: monster bean
+    100072: monster bean001
+    100074: Monsterbean-BKP
+    100076: Point001
+    100078: Point002
+    100080: point_ctrl_eye_L
+    100082: point_ctrl_eye_R
+    100084: Pyramid014
+    100086: Pyramid015
+    400000: Bone__eye_LEFt
+    400002: Bone__eye_RIGHT
+    400004: //RootNode
+    400006: CATRigHub0001
+    400008: CATRigHub0001Gizmo
+    400010: CATRigHub006
+    400012: CATRigHub006Gizmo
+    400014: CATRigLLeg1
+    400016: CATRigLLeg2
+    400018: CATRigLLegAnkle
+    400020: CATRigLLegDigit11
+    400022: CATRigLLegDigit12
+    400024: CATRigLLegPlatform
+    400026: CATRigRLeg1
+    400028: CATRigRLeg2
+    400030: CATRigRLegAnkle
+    400032: CATRigRLegDigit11
+    400034: CATRigRLegDigit12
+    400036: CATRigRLegPlatform
+    400038: CATRigSpine1
+    400040: CATRigSpine2
+    400042: Character003
+    400044: Choc_eye-B_L
+    400046: Choc_ojo-Choc_eye-B_R
+    400048: Choc_ojo-Choc_eye-W_L
+    400050: Choc_ojo-Choc_eye-W_R
+    400052: Ctrl_eyes
+    400054: Ctrl_lid_Lo_L
+    400056: Ctrl_lid_lo_R
+    400058: Ctrl_lid_up_L
+    400060: Ctrl_lid_up_R
+    400062: Ctrl_pu_L
+    400064: Ctrl_pu_R
+    400066: Jeerry Bean L-leg001
+    400068: Jeerry Bean L-leg002
+    400070: monster bean
+    400072: monster bean001
+    400074: Monsterbean-BKP
+    400076: Point001
+    400078: Point002
+    400080: point_ctrl_eye_L
+    400082: point_ctrl_eye_R
+    400084: Pyramid014
+    400086: Pyramid015
+    2300000: Choc_eye-B_L
+    2300002: Choc_ojo-Choc_eye-B_R
+    2300004: Choc_ojo-Choc_eye-W_L
+    2300006: Choc_ojo-Choc_eye-W_R
+    2300008: Ctrl_eyes
+    2300010: monster bean
+    2300012: monster bean001
+    2300014: Pyramid014
+    2300016: Pyramid015
+    3300000: Choc_eye-B_L
+    3300002: Choc_ojo-Choc_eye-B_R
+    3300004: Choc_ojo-Choc_eye-W_L
+    3300006: Choc_ojo-Choc_eye-W_R
+    3300008: Ctrl_eyes
+    3300010: monster bean
+    3300012: monster bean001
+    3300014: Pyramid014
+    3300016: Pyramid015
+    4300000: Choc_ojo-Choc_eye-W_L
+    4300002: Choc_eye-B_L
+    4300004: Choc_ojo-Choc_eye-W_R
+    4300006: Choc_ojo-Choc_eye-B_R
+    4300008: Pyramid014
+    4300010: Pyramid015
+    4300012: Ctrl_eyes
+    4300014: monster bean001
+    4300016: monster bean
+    4300018: Jeerry Bean L-leg001
+    4300020: Monsterbean-BKP
+    4300022: Jeerry Bean L-leg002
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Jeerry Bean L-leg001
+    13700002: Jeerry Bean L-leg002
+    13700004: Monsterbean-BKP
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
