@@ -7,6 +7,7 @@ public class Character : MonoBehaviour {
     [HideInInspector]    public MoveToTarget moveToTArget;
     [HideInInspector]    public Attack attack;
     [HideInInspector]    public CharacterSettings settings;
+	public int id;
 
     void Start()
     {
@@ -47,7 +48,6 @@ public class Character : MonoBehaviour {
         state = states.DEAD;
         Events.OnCharacterDie(this);
 
-        Destroy(gameObject);
 		OnDie ();
     }
     public virtual void OnStart() { }

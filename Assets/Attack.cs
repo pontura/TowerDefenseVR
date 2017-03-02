@@ -8,10 +8,11 @@ public class Attack : MonoBehaviour {
 
     private float _speed = 1;
 
+
     void Start()
     {
         character = GetComponent<Character>();
-		_speed = World.Instance.settings.enemies.speed_to_target;
+		_speed = World.Instance.settings.enemies[0].speed_to_target;
     }
     public void Init(Character target)
     {

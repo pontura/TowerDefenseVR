@@ -19,13 +19,15 @@ public class Tower : MonoBehaviour {
 		BOW_ATTACK,
 		SOLDIERS
 	}
-	public float _height;
-	private Collider collider;
+	public Collider collider;
 
 	void Start()
 	{
-		collider = GetComponent<Collider> ();
 		Events.OnTeleport += OnTeleport;
+	}
+	void OnDestroy()
+	{
+		Events.OnTeleport -= OnTeleport;
 	}
 	void OnTeleport(Tower tower)
 	{

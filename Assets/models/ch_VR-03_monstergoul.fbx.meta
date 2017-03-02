@@ -113,8 +113,10 @@ ModelImporter:
     4300014: Jeerry Bean L-leg001
     4300016: Jeerry Bean L-leg002
     4300018: PM3D_cebest_1
-    7400000: Take 001
+    7400000: walk
+    7400002: die
     9500000: //RootNode
+    11100000: //RootNode
     13700000: Jeerry Bean L-leg001
     13700002: Jeerry Bean L-leg002
     13700004: PM3D_cebest_1
@@ -138,7 +140,231 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: walk
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 35
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CATRigHub0001
+        weight: 1
+      - path: CATRigHub0001/CATRigLLeg1
+        weight: 1
+      - path: CATRigHub0001/CATRigLLeg1/CATRigLLeg2
+        weight: 1
+      - path: CATRigHub0001/CATRigLLeg1/CATRigLLeg2/CATRigLLegAnkle
+        weight: 1
+      - path: CATRigHub0001/CATRigLLeg1/CATRigLLeg2/CATRigLLegAnkle/CATRigLLegDigit11
+        weight: 1
+      - path: CATRigHub0001/CATRigLLeg1/CATRigLLeg2/CATRigLLegAnkle/CATRigLLegDigit11/CATRigLLegDigit12
+        weight: 1
+      - path: CATRigHub0001/CATRigLLeg1/CATRigLLeg2/Pyramid014
+        weight: 1
+      - path: CATRigHub0001/CATRigRLeg1
+        weight: 1
+      - path: CATRigHub0001/CATRigRLeg1/CATRigRLeg2
+        weight: 1
+      - path: CATRigHub0001/CATRigRLeg1/CATRigRLeg2/CATRigRLegAnkle
+        weight: 1
+      - path: CATRigHub0001/CATRigRLeg1/CATRigRLeg2/CATRigRLegAnkle/CATRigRLegDigit11
+        weight: 1
+      - path: CATRigHub0001/CATRigRLeg1/CATRigRLeg2/CATRigRLegAnkle/CATRigRLegDigit11/CATRigRLegDigit12
+        weight: 1
+      - path: CATRigHub0001/CATRigRLeg1/CATRigRLeg2/Pyramid015
+        weight: 1
+      - path: CATRigHub0001/CATRigSpine1
+        weight: 1
+      - path: CATRigHub0001/CATRigSpine1/CATRigSpine2
+        weight: 1
+      - path: CATRigHub0001/CATRigSpine1/CATRigSpine2/CATRigHub006
+        weight: 1
+      - path: CATRigHub0001/Ctrl_eyes
+        weight: 1
+      - path: CATRigHub0001/Ctrl_eyes/Ctrl_lid_Lo_L
+        weight: 1
+      - path: CATRigHub0001/Ctrl_eyes/Ctrl_lid_lo_R
+        weight: 1
+      - path: CATRigHub0001/Ctrl_eyes/Ctrl_lid_up_L
+        weight: 1
+      - path: CATRigHub0001/Ctrl_eyes/Ctrl_lid_up_R
+        weight: 1
+      - path: CATRigHub0001/Ctrl_eyes/Ctrl_pu_L
+        weight: 1
+      - path: CATRigHub0001/Ctrl_eyes/Ctrl_pu_R
+        weight: 1
+      - path: CATRigHub0001/Point001
+        weight: 1
+      - path: CATRigHub0001/Point002
+        weight: 1
+      - path: CATRigHub0001Gizmo
+        weight: 1
+      - path: CATRigHub006Gizmo
+        weight: 1
+      - path: CATRigLLegPlatform
+        weight: 1
+      - path: CATRigRLegPlatform
+        weight: 1
+      - path: Character003
+        weight: 1
+      - path: Jeerry Bean L-leg001
+        weight: 1
+      - path: Jeerry Bean L-leg002
+        weight: 1
+      - path: PM3D_cebest_1
+        weight: 1
+      - path: point_ctrl_eye_L
+        weight: 1
+      - path: point_ctrl_eye_L/Bone__eye_LEFt
+        weight: 1
+      - path: point_ctrl_eye_L/Bone__eye_LEFt/Choc_ojo-Choc_eye-W_L
+        weight: 1
+      - path: point_ctrl_eye_L/Bone__eye_LEFt/Choc_ojo-Choc_eye-W_L/Choc_eye-B_L
+        weight: 1
+      - path: point_ctrl_eye_R
+        weight: 1
+      - path: point_ctrl_eye_R/Bone__eye_RIGHT
+        weight: 1
+      - path: point_ctrl_eye_R/Bone__eye_RIGHT/Choc_ojo-Choc_eye-W_R
+        weight: 1
+      - path: point_ctrl_eye_R/Bone__eye_RIGHT/Choc_ojo-Choc_eye-W_R/Choc_ojo-Choc_eye-B_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: die
+      takeName: Take 001
+      firstFrame: 35
+      lastFrame: 75.00001
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CATRigHub0001
+        weight: 1
+      - path: CATRigHub0001/CATRigLLeg1
+        weight: 1
+      - path: CATRigHub0001/CATRigLLeg1/CATRigLLeg2
+        weight: 1
+      - path: CATRigHub0001/CATRigLLeg1/CATRigLLeg2/CATRigLLegAnkle
+        weight: 1
+      - path: CATRigHub0001/CATRigLLeg1/CATRigLLeg2/CATRigLLegAnkle/CATRigLLegDigit11
+        weight: 1
+      - path: CATRigHub0001/CATRigLLeg1/CATRigLLeg2/CATRigLLegAnkle/CATRigLLegDigit11/CATRigLLegDigit12
+        weight: 1
+      - path: CATRigHub0001/CATRigLLeg1/CATRigLLeg2/Pyramid014
+        weight: 1
+      - path: CATRigHub0001/CATRigRLeg1
+        weight: 1
+      - path: CATRigHub0001/CATRigRLeg1/CATRigRLeg2
+        weight: 1
+      - path: CATRigHub0001/CATRigRLeg1/CATRigRLeg2/CATRigRLegAnkle
+        weight: 1
+      - path: CATRigHub0001/CATRigRLeg1/CATRigRLeg2/CATRigRLegAnkle/CATRigRLegDigit11
+        weight: 1
+      - path: CATRigHub0001/CATRigRLeg1/CATRigRLeg2/CATRigRLegAnkle/CATRigRLegDigit11/CATRigRLegDigit12
+        weight: 1
+      - path: CATRigHub0001/CATRigRLeg1/CATRigRLeg2/Pyramid015
+        weight: 1
+      - path: CATRigHub0001/CATRigSpine1
+        weight: 1
+      - path: CATRigHub0001/CATRigSpine1/CATRigSpine2
+        weight: 1
+      - path: CATRigHub0001/CATRigSpine1/CATRigSpine2/CATRigHub006
+        weight: 1
+      - path: CATRigHub0001/Ctrl_eyes
+        weight: 1
+      - path: CATRigHub0001/Ctrl_eyes/Ctrl_lid_Lo_L
+        weight: 1
+      - path: CATRigHub0001/Ctrl_eyes/Ctrl_lid_lo_R
+        weight: 1
+      - path: CATRigHub0001/Ctrl_eyes/Ctrl_lid_up_L
+        weight: 1
+      - path: CATRigHub0001/Ctrl_eyes/Ctrl_lid_up_R
+        weight: 1
+      - path: CATRigHub0001/Ctrl_eyes/Ctrl_pu_L
+        weight: 1
+      - path: CATRigHub0001/Ctrl_eyes/Ctrl_pu_R
+        weight: 1
+      - path: CATRigHub0001/Point001
+        weight: 1
+      - path: CATRigHub0001/Point002
+        weight: 1
+      - path: CATRigHub0001Gizmo
+        weight: 1
+      - path: CATRigHub006Gizmo
+        weight: 1
+      - path: CATRigLLegPlatform
+        weight: 1
+      - path: CATRigRLegPlatform
+        weight: 1
+      - path: Character003
+        weight: 1
+      - path: Jeerry Bean L-leg001
+        weight: 1
+      - path: Jeerry Bean L-leg002
+        weight: 1
+      - path: PM3D_cebest_1
+        weight: 1
+      - path: point_ctrl_eye_L
+        weight: 1
+      - path: point_ctrl_eye_L/Bone__eye_LEFt
+        weight: 1
+      - path: point_ctrl_eye_L/Bone__eye_LEFt/Choc_ojo-Choc_eye-W_L
+        weight: 1
+      - path: point_ctrl_eye_L/Bone__eye_LEFt/Choc_ojo-Choc_eye-W_L/Choc_eye-B_L
+        weight: 1
+      - path: point_ctrl_eye_R
+        weight: 1
+      - path: point_ctrl_eye_R/Bone__eye_RIGHT
+        weight: 1
+      - path: point_ctrl_eye_R/Bone__eye_RIGHT/Choc_ojo-Choc_eye-W_R
+        weight: 1
+      - path: point_ctrl_eye_R/Bone__eye_RIGHT/Choc_ojo-Choc_eye-W_R/Choc_ojo-Choc_eye-B_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -177,10 +403,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

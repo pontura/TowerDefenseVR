@@ -10,9 +10,6 @@ public class UITowerPanel : MonoBehaviour {
 
 	void Start(){
 		Events.OnMoneyUpdated += OnMoneyUpdated;
-	}
-	void OnEnable()
-	{
 		OnMoneyUpdated (Data.Instance.userData.money);
 	}
 	public void Selected (Tower.types type) {		

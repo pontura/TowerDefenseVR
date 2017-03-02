@@ -5,6 +5,7 @@ public class Defender : Character
 {
     public override void OnStart()
     {
+		settings.energy = World.Instance.settings.defenders.energy;
         settings.force = World.Instance.settings.defenders.force;
         settings.frequency_to_attack = World.Instance.settings.defenders.frequency_to_attack;
         settings.speed_to_run = World.Instance.settings.defenders.speed_to_run;

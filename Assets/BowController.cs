@@ -20,6 +20,8 @@ public class BowController : MonoBehaviour {
 	public void ResetRope()
 	{
 		isWorking = false;
+		if (rope1 == null)
+			return;
 		rope1.SetActive (false);
 		rope2.SetActive (false);
 		ropeStatic.SetActive (true);
@@ -33,6 +35,7 @@ public class BowController : MonoBehaviour {
 			rope2.SetActive (true);
 		}
 		isWorking = true;
+		return;
 		DrawLine (rope1, bowPoint1.transform.position, arrowPosition, Color.white);
 		DrawLine (rope2, arrowPosition, bowPoint2.transform.position, Color.white);
 	}

@@ -5,7 +5,7 @@ using System;
 public class Settings : MonoBehaviour {
 	
     public int weaponForce = 6;
-    public Character enemies;
+    public Character[] enemies;
     public Character defenders;
     public DefenseZone defenseZone;
     public Spawn spawn_enemies;
@@ -35,7 +35,8 @@ public class Settings : MonoBehaviour {
 
     [Serializable]
     public class Character
-    {
+	{
+		public int energy;
 		public int bow_damage = 25;
         public int force = 1;
         public int speed_to_run = 1;

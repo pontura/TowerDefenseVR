@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bow : Weapon {
 
 	public BowController bow;
-	public GameObject arrow;
+	public ThrowableWeapon arrow;
 
 	private float timeToReload = 1;
 
@@ -34,7 +34,8 @@ public class Bow : Weapon {
 	}
 	public override void OnTriggerPress(Vector3 to)
 	{
-		arrow.SetActive (true);
+		arrow.gameObject.SetActive(true);
+		arrow.SetOff ();
 		state = states.WAITING_TO_ACTIVE;
 		HandEvents.Grab (HandController.types.LEFT);
 	}
@@ -62,7 +63,8 @@ public class Bow : Weapon {
 			float distance = Vector3.Distance(arrow.transform.position, bow.transform.position);
 			if(distance<Distance_to_active && arrow.transform.localPosition.z < bow.transform.localPosition.z)
 				state = states.ACTIVE;
-		} else {			
+		} else {		
+			arrow.SetOn();	
 			arrow.transform.LookAt (bow.transform);
 			bow.UpdateArrowPosition (arrow.transform.position);
 
@@ -77,7 +79,7 @@ public class Bow : Weapon {
 
 		state = states.IDLE;
 		bow.ResetRope ();
-		arrow.SetActive (false);
+		arrow.gameObject.SetActive(false);
 	}
 
 }

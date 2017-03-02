@@ -2,8 +2,9 @@
 using System.Collections;
 
 public class CharacterStats : MonoBehaviour {
-
-    private int energy = 100;
+	
+	private int totalEnergy;
+    private int energy;
     Character character;
     public ProgressBar bar;
 
@@ -11,9 +12,15 @@ public class CharacterStats : MonoBehaviour {
     {
         character = GetComponent<Character>();
     }
+	public void SetEnergy(int _totalEnergy)
+	{
+		this.totalEnergy = _totalEnergy;
+		this.energy = _totalEnergy;
+	}
     public void SetBar()
-    {
-        bar.SetValue((float)energy / 100);
+    {		
+		float n = ((float)energy / (float)totalEnergy);
+        bar.SetValue(n);
     }
 
     public void RemoveEnergy(int qty)
@@ -30,5 +37,6 @@ public class CharacterStats : MonoBehaviour {
 		if (character == null)
 			return;
         character.Dead();
+		bar.transform.gameObject.SetActive (false);
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class CharacterSettings : MonoBehaviour {
-
+	public int energy;
     public int force;
     public int speed_to_run;
     public int speed_to_target;

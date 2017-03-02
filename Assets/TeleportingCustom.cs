@@ -5,7 +5,7 @@ using VRTK;
 
 public class TeleportingCustom : MonoBehaviour {
 
-
+	public float DEFAULT_Y = 2.7f;
 	[Tooltip("A string that specifies an object Tag or the name of a Script attached to an object and notifies the teleporter that the destination is to be ignored so the user cannot teleport to that location. It also ensure the pointer colour is set to the miss colour.")]
 	public string ignoreTargetWithTagOrClass;
 	[Tooltip("A specified VRTK_TagOrScriptPolicyList to use to determine whether destination targets will be acted upon by the Teleporter. If a list is provided then the 'Ignore Target With Tag Or Class' parameter will be ignored.")]
@@ -50,7 +50,7 @@ public class TeleportingCustom : MonoBehaviour {
 		Tower tower = e.target.gameObject.GetComponent<Tower> ();
 		if (tower != null) {
 			Vector3 newPos = tower.transform.position;
-			newPos.y = tower._height;
+			newPos.y += DEFAULT_Y;
 			transform.localPosition = newPos;
 			Events.OnTeleport (tower);
 			return;
