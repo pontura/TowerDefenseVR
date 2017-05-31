@@ -1,0 +1,50 @@
+[
+
+	//0: normal
+	//1: rapidos
+	//2: grandes
+
+	waves: 
+	[
+		{ 
+			enemies:[0,0,0],
+			delay: 20
+		},
+		{ 
+			enemies:[0,0,0,0],
+			delay: 15
+		},
+		{ 
+			enemies:[1,1],
+			delay: 10
+		},
+		{ 
+			enemies:[1,0,0,0,0,0],
+			delay: 20
+		},
+		{ 
+			enemies:[2],
+			delay: 12
+		},
+		{ 
+			enemies:[0,0,0,0,0,0,0],
+			delay: 20
+		},
+		{ 
+			enemies:[0,0,1,2,2],
+			delay: 12
+		},
+		{ 
+			enemies:[1,1,1,0,0,0,0,2,2],
+			delay: 22
+		},
+		{ 
+			enemies:[2,2,1,0,0,0,0,2,2],
+			delay: 23
+		},
+		{ 
+			enemies:[2,2,2],
+			delay: 12
+		}
+	]
+]

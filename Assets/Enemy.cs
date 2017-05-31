@@ -8,27 +8,31 @@ public class Enemy : Character
 	public float speed;
 	public Animation anim;
 
-	public void Init(int id)
+	public types type;
+	public enum types
 	{
-		this.id = id;
+		SMALL,
+		MEDIUM,
+		BIG
+	}
+
+	public void Init(types _type)
+	{
+		this.type = _type;
 		moveToTArget.Init (this);
 	}
 	public override void OnStart()
 	{
-		stats.SetEnergy(World.Instance.settings.enemies[id-1].energy);
-		settings.force = World.Instance.settings.enemies[id-1].force;
-		settings.frequency_to_attack = World.Instance.settings.enemies[id-1].frequency_to_attack;
-		settings.speed_to_run = World.Instance.settings.enemies[id-1].speed_to_run;
-		settings.speed_to_target = World.Instance.settings.enemies[id-1].speed_to_target;
+		stats.SetEnergy(World.Instance.settings.GetEnemyByType(type).energy);
+		settings.force = World.Instance.settings.GetEnemyByType(type).force;
+		settings.frequency_to_attack = World.Instance.settings.GetEnemyByType(type).frequency_to_attack;
+		settings.speed_to_run = World.Instance.settings.GetEnemyByType(type).speed_to_run;
+		settings.speed_to_target = World.Instance.settings.GetEnemyByType(type).speed_to_target;
 		speed = settings.speed_to_run;
 
         pathNodes = GetComponent<PathfinderNodesManager>();
 
-
 		anim.Play ("walk");
-		//if (Random.Range (0, 100) < 40)
-		//	speed *= 2;
-	//	anim.Play ("walk");
     }
     public void SetMoveToTarget(Transform target)
     {

@@ -24,5 +24,6 @@ public static class Events
 
 	public static System.Action<Vector3> OnTeleportAvailable = delegate { };
 	public static System.Action OnTeleportDisable = delegate { };
+	public static System.Action<Vector3> OnAddExplotion= delegate { };
 }
    

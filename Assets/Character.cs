@@ -7,7 +7,6 @@ public class Character : MonoBehaviour {
     [HideInInspector]    public MoveToTarget moveToTArget;
     [HideInInspector]    public Attack attack;
     [HideInInspector]    public CharacterSettings settings;
-	public int id;
 
     void Start()
     {

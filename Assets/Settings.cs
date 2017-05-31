@@ -5,10 +5,14 @@ using System;
 public class Settings : MonoBehaviour {
 	
     public int weaponForce = 6;
-    public Character[] enemies;
+
+	//enemies
+    public Character enemiesSmall;
+	public Character enemiesMedium;
+	public Character enemiesBig;
+
     public Character defenders;
     public DefenseZone defenseZone;
-    public Spawn spawn_enemies;
 	public User user;
 	public Prices prices;
 
@@ -24,15 +28,6 @@ public class Settings : MonoBehaviour {
 		public int defenderSoldiers = 50;
 		public int hurtEnemy = 10;
 	}
-
-    [Serializable]
-    public class Spawn
-    {
-        public float time_to_spawn = 1;
-        public int total = 10;
-		public int wait_to_respawn = 10;
-    }
-
     [Serializable]
     public class Character
 	{
@@ -48,5 +43,18 @@ public class Settings : MonoBehaviour {
     {
         public float fofrequency_to_spawn = 1;
     }
+
+	public Character GetEnemyByType(Enemy.types types)
+	{
+		switch(types)
+		{
+		case Enemy.types.SMALL:
+			return enemiesSmall;
+		case Enemy.types.MEDIUM:
+			return enemiesMedium;
+		default:
+			return enemiesBig;
+		}
+	}
 
 }
